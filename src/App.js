@@ -28,12 +28,17 @@ function App() {
   };
   return (
     <div className="container">
-      <video src="/images/video-2.mp4" autoPlay loop muted />
+      <video src="/images/video-2.mp4" autoPlay loop muted playsInline />
       <nav className="nav-container">
         <h2>Weathle</h2>
         <ul>
-          <li>Learn More</li>
-          <li>About</li>
+          <li>
+            <Link to="#">Learn More</Link>
+          </li>
+          <li>
+            Develop by
+            <Link to="#">Matthew David</Link>
+          </li>
         </ul>
       </nav>
       <div className="main-container">
