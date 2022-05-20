@@ -6,6 +6,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import Title from "react-vanilla-tilt";
 
 
+
 function App() {
   const [query, setQuery] = useState('')
   const [weather, setWeather] = useState({});
@@ -33,11 +34,11 @@ function App() {
         <h2>Weathle</h2>
         <ul>
           <li>
-            <Link to="#">Learn More</Link>
+            <a href="#">Learn More</a>
           </li>
           <li>
             Develop by
-            <Link to="#">Matthew David</Link>
+            <a to="#">Matthew David</a>
           </li>
         </ul>
       </nav>
