@@ -2,7 +2,7 @@ import { useState } from "react";
 import { fetchWeather } from "./api/fetchWeather";
 import './App.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Title from "react-vanilla-tilt";
 
 
@@ -34,11 +34,8 @@ function App() {
         <h2>Weathle</h2>
         <ul>
           <li>
-            <a href="#">Learn More</a>
-          </li>
-          <li>
-            Develop by
-            <a to="#">Matthew David</a>
+            Developed by 
+            <a href="https://github.com/mattnewdavid"> Matthew David <FontAwesomeIcon icon={faArrowRight} /></a>
           </li>
         </ul>
       </nav>
@@ -60,7 +57,7 @@ function App() {
         </div>
 
         {weather.data && (
-          <Title className="city" options={{ glare: true, "max-glare": 1 }}>
+          <Title className="city">
             <div>
               <h2 className="city-name">
                 <span>{weather.data.name}</span>

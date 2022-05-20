@@ -29,6 +29,11 @@ video {
 .nav-container ul li{
     margin-right: 50px;
 }
+.nav-container ul li a{
+    color: #ffb300;
+    text-decoration: underline;
+}
+
 .container{
     display: flex;
     flex-direction: column;
